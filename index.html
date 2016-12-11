@@ -12,12 +12,13 @@
         body { margin: 0; padding: 0;}
         section { padding: 5% 15%; margin: 0 auto;}
 	.center-block { display:block;margin-left:auto;margin-right:auto; }
+	#cover-img { position:absolute }
     </style>
 </head>
 <body>
 
-    <div class="img-holder cover" data-image="img/cover-bg.jpg" data-cover-ratio="1" data-width="1920" data-height="1080" data-speed="1"></div>
-	<img src="img/cover-art.svg" class="center-block" style="position: absolute;top: 225px;left: 450px;">
+    <div class="img-holder" id="cover-box" data-image="img/cover-bg.jpg" data-cover-ratio="1" data-width="1920" data-height="1080" data-speed="1"></div>
+	<img src="img/cover-art.svg" class="center-block" id="cover-img">
 	<!--<img src="http://d9hhrg4mnvzow.cloudfront.net/getsmarter.mit.edu/fintech-future-commerce-course/ee0a6138-bb7d714a-next-arrow-02g02g02g02g000000_02l02l02l02l000000.gif">-->
 
 
@@ -61,6 +62,17 @@
 //            parallax: true,
 //            touch: false
         });
+	
+	$wWidth = $('#cover-box').width()
+	$wHeight = $('#cover-box').height()
+	$cWidth = $('#cover-img').width()
+	$cHeight = $('#cover-img').height()
+	
+	$oWidth = (($wWidth-$cWidth)/2)
+	$oHeight = (($wHeight-$cHeight)/2)
+
+	$('#cover-img').css({"left":$oWidth})
+	$('#cover-img').css({"top":$oHeight})
     </script>
 </body>
 </html>
