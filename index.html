@@ -5,43 +5,38 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Parallax-ImageScroll demo</title>
+    <title>Rapunzel: A Story of Love, Loss and Humanity</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <style>
-        body { margin: 0; padding: 0;}
-        section { padding: 5% 15%; margin: 0 auto;}
-	.center-block { display:block;margin-left:auto;margin-right:auto; }
-	#cover-img { position:absolute; width:100% }
-	#cover-arrow { width: 7.5%; position: absolute; bottom: 1em; left: 45%; }
-    </style>
+  <link href="https://fonts.googleapis.com/css?family=Abel|Raleway:300" rel="stylesheet"> 
+<link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
 
     <div class="img-holder" id="cover-box" data-image="img/background_1.png" data-cover-ratio="1" data-width="1920" data-height="1080" data-speed="1"></div>
 	<img src="img/cover-art.svg" class="center-block" id="cover-img">
-	<img src="img/cover-arrow.gif" id="cover-arrow">
+      <a href="#scene-2" class="page-scroll"><img src="img/cover-arrow.gif" id="cover-arrow"></a>
 
 
     <!--<div class="img-holder" data-image="img/slums.png" data-cover-ratio="0.85" data-width="1920" data-height="1080" data-speed="0.1"></div>-->
 
     <section>
-<h1>Scene 1 - TO BE REMOVED</h1>
-<p>Once upon a time… in a city named Amityville. In an area known to locals as ‘El Gueto’ which is ‘Ghetto’ in spanish, due to it’s high crime rate and low income mostly due to an abundance of illegal drugs. El Gueto consisted of three highrise buildings each control by a different drug-lord. Located in the lower bowels of ‘Block C’ the tallest of the megastructure, lived a humble couple that were destined to be future parents. The depressive state of living conditions with the gang controlled megastructure doesn’t leave many options for the married couple, especially since they fit all the criteria, low income and no aspirations of escaping their prison-like lifestyle.</p>
+<h1>Let's put some catchy intro to the scene here (scene 1)</h1>
+<p>Once upon a time… in a city named Amityville. In an area known to locals as El Gueto. El Gueto consisted of three highrise buildings each control by a different drug-lord. Located in the lower bowels of Block A, the tallest of the megastructure, lived a humble couple that were destined to be future parents. The depressive state of living conditions with the gang controlled megastructure doesn’t leave many options for the married couple, especially since they fit all the criteria, low income and no aspirations of escaping their prison-like lifestyle.</p>
 
 <p>As with many people within El Gueto, they found themselves turning to other inlets - the mother-to-be caught herself addicted to the gang controlled substance rapunzel. Day to day life became increasingly difficult for the future father as the addiction grew to unsustainable levels. Struggling, the father would have to find other methods other than paying for the substance with the little money they had… this would eventually cause him to take desperate measures.</p>
     </section>
 
     <div class="img-holder" data-image="img/corridor.jpg" data-cover-ratio="0.85"></div>
 
-    <section>
-<h1>Scene 2 - TO BE REMOVED</h1>
+    <section id="scene-2">
+<h1>The Addicton</h1>
 <p>The husband would spent many hours worrying over his wife's condition as it progressively got worse and worse. The level of rapunzel now needed to maintain the wife’s addiction was beyond what they could afford, so the wife started having withdrawal symptoms. The first week the wife started to have cold sweats during her sleep, the husband worried and stayed up watching over her. After the sweats came the sleepless nights due to the nightmarish hallucinations keeping the husband on constant alert, worrying every second about her well-being. On the sixth week of the hellish withdrawal period the husband had finally had enough, he was going to get enough rapunzel to help calm his wife’s addiction and more importantly save the couples relationship. No matter what the cost…</p>
 
 
 <p>Outside the couple's flat consisted a network of narrow and complex corridors that connected the many other small dingy flats together, at key points of corridor connections there would usually be low level gang members distributing the drug needed to fulfill the wife’s dependency. Late one night, the husband ventured outside the flat to find one of these gang members.</p>
 
-<p>Block C consisted a network of narrow and complex corridors that connected the many other small dingy flats together with the couples. At key points where corridors would intersect there would usually be low level gang members distributing the drug needed to fulfill the wife’s dependency. Late one night, although unless you were located on the edges of the megacomplex you would have to trust your watch - the husband ventured outside the flat to find one of these gang members, his intentions were devious as he did not plan to pay the dealer… After the long trip through the maze he finally ended up at his destination, the dealers distribution point, “This is has to be the place”. He anxiously waits for the opportune moment to strike, his sinister plan involved taking what he needed by force. During a dry spell the dealer decided to watch some sort of video on what looked like a hand held device. The husband sneaked his way over approaching the dealer slowly tightly grasping his laser taser, he took aim and fired - A direct hit. He scurried over closing the last of the distance between them and searched the dealer for what he found, “Bingo, Just what I was looking for”.</p>
+<p>Block A consisted a network of narrow and complex corridors that connected the many other small dingy flats together with the couples. At key points where corridors would intersect there would usually be low level gang members distributing the drug needed to fulfill the wife’s dependency. Late one night, although unless you were located on the edges of the megacomplex you would have to trust your watch - the husband ventured outside the flat to find one of these gang members, his intentions were devious as he did not plan to pay the dealer… After the long trip through the maze he finally ended up at his destination, the dealers distribution point, “This is has to be the place”. He anxiously waits for the opportune moment to strike, his sinister plan involved taking what he needed by force. During a dry spell the dealer decided to watch some sort of video on what looked like a hand held device. The husband sneaked his way over approaching the dealer slowly tightly grasping his laser taser, he took aim and fired - A direct hit. He scurried over closing the last of the distance between them and searched the dealer for what he found, “Bingo, Just what I was looking for”.</p>
     </section>
 
     <div class="img-holder" data-image="img/corridor.jpg" data-cover-ratio="0.85"></div>
@@ -95,5 +90,7 @@
 	$(window).load(coverImage);
 	$(window).resize(coverImage);
     </script>
+      <script src="js/jquery.easing.min.js"></script>
+      <script src="js/scrolling-nav.js"></script>
 </body>
 </html>
