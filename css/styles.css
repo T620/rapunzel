@@ -3,7 +3,7 @@
   	margin: 0;
   	padding: 0;
         font-family: 'Raleway', sans-serif;
-        background: #FFFFFB;
+        background: #FFFFFD;
         color: #4C4C4C;
   }
   
@@ -17,6 +17,7 @@ h1, h2, h3{
       text-align: center;
       text-transform: uppercase;
       font-family: 'Abel', sans-serif;
+      color:  #F75E50;
 }
 
   .center-block {
@@ -36,3 +37,19 @@ h1, h2, h3{
   	bottom: 1em;
   	left: 45%;
   }
+
+/*some extra tiny details Tom probs wont notice */
+::-moz-selection{
+      color:  #F75E50;
+      background: #000; 
+}
+
+::selection{
+      color:  #F75E50;
+      background: #000; 
+}
+::-webkit-selection{
+        color:  #F75E50;
+      background: #000; 
+}
+}
