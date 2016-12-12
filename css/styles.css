@@ -38,6 +38,15 @@ h1, h2, h3{
   	left: 45%;
   }
 
+.scene-heading {
+    color: #fd0;
+    background: #4d4a43;
+    position: relative;
+    margin: 0;
+    padding: 1% 0;
+    font-size: 3.5em;
+}
+
 /*some extra tiny details Tom probs wont notice */
 ::-moz-selection{
       color:  #F75E50;
