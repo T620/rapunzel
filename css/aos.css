@@ -901,7 +901,8 @@
 	transition-property: transform, -webkit-transform
 }
 [data-aos^=slide][data-aos^=slide].aos-animate {
-	-webkit-transform: -webkit-translate(0);
+    display: block;
+	-webkit-transform: translate(0);
 	        transform: translate(0)
 }
 [data-aos=slide-up] {
