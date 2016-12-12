@@ -45,20 +45,21 @@ h1, h2, h3{
     margin: 0;
     padding: 1% 0;
     letter-spacing: .4em;
+    z-index:999;
 }
 
 /*some extra tiny details Tom probs wont notice */
 ::-moz-selection{
-      color:  #F75E50;
+      color: #fd0;
       background: #000; 
 }
 
 ::selection{
-      color:  #F75E50;
+      color: #fd0;
       background: #000; 
 }
 ::-webkit-selection{
-        color:  #F75E50;
+      color: #fd0;
       background: #000; 
 }
 }
