@@ -1,65 +1,59 @@
 /*Rapunzel Global CSS Rules*/
-  body {
-  	margin: 0;
-  	padding: 0;
-        font-family: 'Raleway', sans-serif;
-        background: #FFFFFD;
-        color: #4C4C4C;
-  }
-  
-  section {
-  	    padding: 2.5% 15% 5%;
-  	margin: 0 auto;
-         background: #FFFEE8;
-  }
-  
-h1, h2, h3{
-      text-align: center;
-      text-transform: uppercase;
-      font-family: 'Abel', sans-serif;
-      color:  #F75E50;
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+	background: #FFFFFD;
+	color: #4C4C4C;
 }
-
-  .center-block {
-  	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-  }
-  
-  #cover-img {
-  	position: absolute;
-  	width: 100%
-  }
-  
-  #cover-arrow {
-  	width: 7.5%;
-  	position: absolute;
-  	bottom: 1em;
-  	left: 45%;
-  }
-
+section {
+	padding: 2.5% 15% 5%;
+	margin: 0 auto;
+	background: #FFFEE8;
+}
+h1, h2, h3 {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Abel', sans-serif;
+	color: #F75E50;
+}
+.center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#cover-img {
+	position: absolute;
+	width: 100%
+}
+#cover-arrow {
+	width: 7.5%;
+	position: absolute;
+	bottom: 1em;
+	left: 45%;
+}
 .scene-heading {
-    color: #fd0;
-    background: #4d4a43;
-    position: relative;
-    margin: 0;
-    padding: 1% 0;
-    letter-spacing: .4em;
-    z-index:999;
+	color: #fd0;
+	background: #4d4a43;
+	position: relative;
+	margin: 0;
+	padding: 1% 0;
+	letter-spacing: .4em;
+	z-index: 999;
 }
 
 /*some extra tiny details Tom probs wont notice */
-::-moz-selection{
-      color: #fd0;
-      background: #000; 
-}
 
-::selection{
-      color: #fd0;
-      background: #000; 
+::-moz-selection {
+	color: #fd0;
+	background: #000;
 }
-::-webkit-selection{
-      color: #fd0;
-      background: #000; 
+::selection {
+	color: #fd0;
+	background: #000;
 }
+::-webkit-selection {
+	color: #fd0;
+	background: #000;
 }
