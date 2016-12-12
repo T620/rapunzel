@@ -50,6 +50,16 @@ h1, h2, h3 {
       width: 50%;
 }
 
+
+/*use these classes to pull the div to the left or right */
+
+.left{
+      float: left;
+}
+.right{
+      float: right;
+}
+
 /*some extra tiny details Tom probs wont notice */
 
 ::-moz-selection {
