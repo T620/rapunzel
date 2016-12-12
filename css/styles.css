@@ -8,7 +8,7 @@
   }
   
   section {
-  	padding: 5% 15%;
+  	    padding: 2.5% 15% 5%;
   	margin: 0 auto;
          background: #FFFEE8;
   }
@@ -44,7 +44,7 @@ h1, h2, h3{
     position: relative;
     margin: 0;
     padding: 1% 0;
-    font-size: 3.5em;
+    letter-spacing: .4em;
 }
 
 /*some extra tiny details Tom probs wont notice */
