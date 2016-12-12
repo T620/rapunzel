@@ -43,6 +43,13 @@ h1, h2, h3 {
 	z-index: 999;
 }
 
+.character{
+      padding: 2%;
+      background: #fff;
+      margin: 4%;
+      width: 50%;
+}
+
 /*some extra tiny details Tom probs wont notice */
 
 ::-moz-selection {
