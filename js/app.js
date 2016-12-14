@@ -1,3 +1,7 @@
+if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+	alert('"The Legend of Rapunzel" interactive website does not display correctly on Safari due to some dependecies. It is recommended that you access it from Chrome.');
+}
+
 $('.img-holder').imageScroll({});
 
 function coverImage() {
@@ -26,7 +30,3 @@ $(function() {
      		event.preventDefault();
       	});
 });
-
-if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
-		      	alert('"The Legend of Rapunzel" interactive website does not display correctly on Safari due to some dependecies. It is recommended that you access it from Chrome.');
-		      }
