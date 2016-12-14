@@ -61,6 +61,121 @@ h1, h2, h3 {
       float: right;
 }
 
+    .dialogue {
+    	background: #fff;
+    	font-size: 1rem;
+    	padding: 1rem;
+    	clear: both;
+    }
+    .dialogue:afer {
+    	content: "";
+    	display: table;
+    	clear: both;
+    }
+    .dialogue.left {
+    	-webkit-border-top-right-radius: 50px;
+    	-webkit-border-bottom-right-radius: 50px;
+    	-moz-border-radius-topright: 50px;
+    	-moz-border-radius-bottomright: 50px;
+    	border-top-right-radius: 50px;
+    	border-bottom-right-radius: 50px;
+    }
+    .dialogue.right {
+    	-webkit-border-top-left-radius: 50px;
+    	-webkit-border-bottom-left-radius: 50px;
+    	-moz-border-radius-topleft: 50px;
+    	-moz-border-radius-bottomleft: 50px;
+    	border-top-left-radius: 50px;
+    	border-bottom-left-radius: 50px;
+    }
+    #cd-vertical-nav {
+    	list-style: none;
+    	position: fixed;
+    	right: 40px;
+    	top: 50%;
+    	bottom: auto;
+    	-webkit-transform: translateY(-50%);
+    	-moz-transform: translateY(-50%);
+    	-ms-transform: translateY(-50%);
+    	-o-transform: translateY(-50%);
+    	transform: translateY(-50%);
+    	z-index: 1;
+        opacity: 0.6;
+        transition: opacity .5s;
+    }
+    #cd-vertical-nav:hover {
+        opacity: 1;
+    }
+    #cd-vertical-nav li {
+    	text-align: right;
+    }
+    #cd-vertical-nav a {
+    	display: inline-block;
+    	/* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
+    	-webkit-backface-visibility: hidden;
+    	backface-visibility: hidden;
+    }
+    #cd-vertical-nav a:after {
+    	content: "";
+    	display: table;
+    	clear: both;
+    }
+    #cd-vertical-nav a span {
+    	float: right;
+    	display: inline-block;
+    	-webkit-transform: scale(0.6);
+    	-moz-transform: scale(0.6);
+    	-ms-transform: scale(0.6);
+    	-o-transform: scale(0.6);
+    	transform: scale(0.6);
+    }
+    #cd-vertical-nav a:hover span {
+    	-webkit-transform: scale(1);
+    	-moz-transform: scale(1);
+    	-ms-transform: scale(1);
+    	-o-transform: scale(1);
+    	transform: scale(1);
+    }
+    #cd-vertical-nav a:hover .cd-label {
+    	opacity: 1;
+    }
+    #cd-vertical-nav .cd-dot {
+    	position: relative;
+    	top: 8px;
+    	height: 2rem;
+    	width: 2rem;
+    	border-radius: 50%;
+    	background-color: #4d4a43;
+        border: .5em solid #fd0;
+    	-webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
+    	-moz-transition: -moz-transform 0.2s, background-color 0.5s;
+    	transition: transform 0.2s, background-color 0.5s;
+    	-webkit-transform-origin: 50% 50%;
+    	-moz-transform-origin: 50% 50%;
+    	-ms-transform-origin: 50% 50%;
+    	-o-transform-origin: 50% 50%;
+    	transform-origin: 50% 50%;
+    }
+    #cd-vertical-nav .cd-label {
+    	position: relative;
+    	padding: .4em .5em;
+    	background: #4d4a43;
+    	font-weight: bold;
+    	color: white;
+    	font-size: 1rem;
+    	margin: 1rem 0;
+    	font-size: 1rem;
+    	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    	-moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    	transition: transform 0.2s, opacity 0.2s;
+    	opacity: 0;
+    	-webkit-transform-origin: 100% 50%;
+    	-moz-transform-origin: 100% 50%;
+    	-ms-transform-origin: 100% 50%;
+    	-o-transform-origin: 100% 50%;
+    	transform-origin: 100% 50%;
+    }
+
 /*some extra tiny details Tom probs wont notice */
 
 ::-moz-selection {
