@@ -44,10 +44,11 @@ h1, h2, h3 {
 }
 
 .character{
-      padding: 2%;
-      background: #fff;
-      margin: 4%;
-      width: 50%;
+ /*css for all character to follow, all other will be inline */
+}
+/* to be removed just for place holder prior to being positioned correctly*/
+.character img {
+    width: 500px;
 }
 
 
