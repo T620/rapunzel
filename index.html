@@ -180,7 +180,7 @@
 		<!-- Scene 7 -->
 		<div class="img-holder" data-cover-ratio="0.85" data-image="img/background/corridor-hair.png" id="scene-7_image">
 			<h1 class="scene-heading" data-aos="slide-down" data-aos-anchor="#scene-7_image" data-aos-duration="500" data-aos-offset="350">
-				Rapunzel
+				Discovery
 			</h1>
             <div>
                 <div class="character left" data-aos="fade-right" data-aos-anchor="#scene-7_image" data-aos-duration="500" data-aos-offset="400" data-aos-delay="300">
@@ -267,48 +267,105 @@
 		
 		
 		
-		<div id="scene-nav">
-<ul>
-  <li><a class="page-scroll" href="#cover-box">Cover</a></li>
-  <li><a class="page-scroll" href="#scene-1_image">Scene 1</a></li>
-  <li><a class="page-scroll" href="#scene-2_image">Scene 2</a></li>
-  <li><a class="page-scroll" href="#scene-3_image">Scene 3</a></li>
-  <li><a class="page-scroll" href="#scene-4_image">Scene 4</a></li>
-  <li><a class="page-scroll" href="#scene-5_image">Scene 5</a></li>
-  <li><a class="page-scroll" href="#scene-6_image">Scene 6</a></li>
-  <li><a class="page-scroll" href="#scene-7_image">Scene 7</a></li>
-  <li><a class="page-scroll" href="#scene-8_image">Scene 8</a></li>
-  <li><a class="page-scroll" href="#scene-9_image">Scene 9</a></li>
-  <li><a class="page-scroll" href="#scene-10_image">Scene 10</a></li>
+<ul id="cd-vertical-nav">
+  <li><a class="page-scroll" href="#cover-box"><span class="cd-dot"></span><span class="cd-label">Cover</span></a></li>
+  <li><a class="page-scroll" href="#scene-1_image"><span class="cd-dot"></span><span class="cd-label">Scene 1</span></a></li>
+  <li><a class="page-scroll" href="#scene-2_image"><span class="cd-dot"></span><span class="cd-label">Scene 2</span></a></li>
+  <li><a class="page-scroll" href="#scene-3_image"><span class="cd-dot"></span><span class="cd-label">Scene 3</span></a></li>
+  <li><a class="page-scroll" href="#scene-4_image"><span class="cd-dot"></span><span class="cd-label">Scene 4</span></a></li>
+  <li><a class="page-scroll" href="#scene-5_image"><span class="cd-dot"></span><span class="cd-label">Scene 5</span></a></li>
+  <li><a class="page-scroll" href="#scene-6_image"><span class="cd-dot"></span><span class="cd-label">Scene 6</span></a></li>
+  <li><a class="page-scroll" href="#scene-7_image"><span class="cd-dot"></span><span class="cd-label">Scene 7</span></a></li>
+  <li><a class="page-scroll" href="#scene-8_image"><span class="cd-dot"></span><span class="cd-label">Scene 8</span></a></li>
+  <li><a class="page-scroll" href="#scene-9_image"><span class="cd-dot"></span><span class="cd-label">Scene 9</span></a></li>
+<li><a class="page-scroll" href="#scene-10_image"><span class="cd-dot"></span><span class="cd-label">Scene 10</span></a></li>
 </ul>
-</div>
 <style>
-#scene-nav {
-background: url('img/hair.png');
-position: fixed;
-top:0;
-right:0;
+
+#cd-vertical-nav {
+    list-style: none;
+  position: fixed;
+  right: 40px;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
 }
-#scene-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-position: fixed;
-    right: 0;
-    top: 40%;
-    height: 20%;
+#cd-vertical-nav li {
+  text-align: right;
 }
-    #scene-nav li {
-            display: block;
-        background: #fd0;
-    padding: 5%;
-        margin: 2px 0;
-    }
-#scene-nav li a {
-        display: block;
-    color: #4d4a43;
-    text-decoration: none;
+#cd-vertical-nav a {
+  display: inline-block;
+  /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+#cd-vertical-nav a:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#cd-vertical-nav a span {
+  float: right;
+  display: inline-block;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  transform: scale(0.6);
+}
+#cd-vertical-nav a:hover span {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+#cd-vertical-nav a:hover .cd-label {
+  opacity: 1;
+}
+#cd-vertical-nav a.is-selected .cd-dot {
+  background-color: white;
+}
+#cd-vertical-nav .cd-dot {
+  position: relative;
+  /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
+  top: 8px;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: #fd0;
+  -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
+  -moz-transition: -moz-transform 0.2s, background-color 0.5s;
+  transition: transform 0.2s, background-color 0.5s;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+#cd-vertical-nav .cd-label {
+  position: relative;
+  padding: .4em .5em;
+background: #4d4a43;
     font-weight: bold;
+  color: white;
+font-size: 1rem;
+    margin: 1rem 0;
+  font-size: 1rem;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  opacity: 0;
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
 }
 </style>
 		
